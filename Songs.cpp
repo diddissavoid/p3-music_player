@@ -53,6 +53,70 @@ const uint16_t PROGMEM seven_notes[] = {NOTE_E5, NOTE_E5, NOTE_G5, NOTE_E5, NOTE
 const uint16_t PROGMEM seven_durations[] = {400, 200, 200, 200, 200, 400, 400, 400, 400, 200, 200, 200, 200, 200, 200, 200, 400};
 
 
+// Game of Thrones - Full Length Main Melody
+const uint16_t PROGMEM got_full_notes[] = {
+ 
+  NOTE_G4, NOTE_C4, NOTE_DS4, NOTE_F4, 
+  NOTE_G4, NOTE_C4, NOTE_DS4, NOTE_F4,
+  NOTE_D4, REST, 
+  NOTE_F4, NOTE_AS3, NOTE_DS4, NOTE_D4, 
+  NOTE_F4, NOTE_AS3, NOTE_DS4, NOTE_D4,
+  NOTE_C4, REST,
+
+  
+  NOTE_G4, NOTE_C4, NOTE_DS4, NOTE_F4, 
+  NOTE_G4, NOTE_C4, NOTE_DS4, NOTE_F4,
+  NOTE_D4, REST, 
+  NOTE_F4, NOTE_AS3, NOTE_DS4, NOTE_D4, 
+  NOTE_F4, NOTE_AS3, NOTE_DS4, NOTE_D4,
+  NOTE_C4, REST,
+
+
+  NOTE_G5, NOTE_C5, NOTE_DS5, NOTE_F5, 
+  NOTE_G5, NOTE_C5, NOTE_DS5, NOTE_F5,
+  NOTE_D5, REST, 
+  NOTE_F5, NOTE_AS4, NOTE_DS5, NOTE_D5, 
+  NOTE_F5, NOTE_AS4, NOTE_DS5, NOTE_D5,
+  NOTE_C5, REST,
+
+  
+  NOTE_G4, NOTE_C4, NOTE_DS4, NOTE_F4,
+  NOTE_D4, REST,
+  NOTE_C4, REST
+};
+
+const uint16_t PROGMEM got_full_durations[] = {
+  
+  400, 400, 200, 200, 
+  400, 400, 200, 200,
+  800, 200,
+  400, 400, 200, 200, 
+  400, 400, 200, 200,
+  800, 400,
+
+ 
+  400, 400, 200, 200, 
+  400, 400, 200, 200,
+  800, 200,
+  400, 400, 200, 200, 
+  400, 400, 200, 200,
+  800, 400,
+
+  
+  400, 400, 200, 200, 
+  400, 400, 200, 200,
+  800, 200,
+  400, 400, 200, 200, 
+  400, 400, 200, 200,
+  800, 400,
+
+
+  600, 600, 300, 300,
+  1200, 400,
+  1600, 800
+};
+  
+
 // --- Playlist Array Initialization ---
 Song playlist[] = {
   {"1. Beethoven - Fur Elise", fur_elise_notes, fur_elise_durations, 41},
@@ -68,6 +132,7 @@ Song playlist[] = {
   {"11. Pirates of the Caribbean", pirates_notes, pirates_durations, 32},
   {"12. A-ha - Take On Me", takeonme_notes, takeonme_durations, 33},
   {"13. Seven Nation Army", seven_notes, seven_durations, 17}
+  {"14. Game of Thrones - Full Theme", got_full_notes, got_full_durations, 66}
 };
 
 const int NUM_SONGS = sizeof(playlist) / sizeof(playlist[0]);

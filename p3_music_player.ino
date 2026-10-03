@@ -38,7 +38,7 @@ void setup() {
   Serial.println(" System Initialized (Modular OOP Code)");
   Serial.println(" Type 'start' to begin.");
   Serial.println(" Type 'end' anytime to stop the music.");
-  Serial.println(" Type '1' to '13' to skip songs.");
+  Serial.println(" Type '1' to '14' to skip songs.");
   Serial.println("=========================================");
 }
 
@@ -204,8 +204,11 @@ void lightLEDs(int freq) {
       digitalWrite(LED_G, HIGH); digitalWrite(LED_A, HIGH); break;
     case NOTE_A4: case NOTE_A5:  
       digitalWrite(LED_A, HIGH); break;
-    case NOTE_AS4: case NOTE_AS5:
+      
+    
+    case NOTE_AS3: case NOTE_AS4: case NOTE_AS5:
       digitalWrite(LED_A, HIGH); digitalWrite(LED_B, HIGH); break;
+      
     case NOTE_B4: case NOTE_B5: 
       digitalWrite(LED_B, HIGH); break;
   }
